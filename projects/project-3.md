@@ -15,6 +15,9 @@ summary: An app/social media I want to develope for fishermen to log and share t
 ---
 <img class="ui medium right floated rounded image" src="../images/menpachis.png">
 
+
+
+
 Hawaiian Fishing Log is a mobile application I plan to develop in the near future. From my years of shore fishing on Kauai I have beared witness to the spike of popularity shore fishing has taken on in the past five years. My theory is that this was caused by the growing popularity of Instagram and Facebook where shore fisherpeople began to post their catches for their friends online. In reaction to this many people young and old have grabbed their tackle and poles creating a new generation of shoreline fisherpeople here in Hawaii.
 
 <img class="ui medium left floated rounded image" src="../images/wizard.png">

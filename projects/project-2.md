@@ -27,3 +27,4 @@ Ninja Shepard is by no means a good game, I mean, the code is hideous, last time
 Source: <a href="https://github.com/zakgilbert/NinjaShepard"><i class="large github icon"></i>zakgilbert/NinjaShepard</a>
 
 You can see Ninja Shepard gameplay at the [You Tube](https://www.youtube.com/watch?v=U4HBGTayWi0).
+Check out the [EZ Graphics Library](http://www2.hawaii.edu/~dylank/ics111/).

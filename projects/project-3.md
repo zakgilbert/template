@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: images/notecard-kagami.jpg
-title: Hawaii Fishing Log
+title: Hawaiian Fishing Log
 permalink: projects/cotton
 # All dates must be YYYY-MM-DD format!
 date: 2018-08-30
@@ -13,48 +13,21 @@ labels:
   - Hawaii Shore Fish
 summary: An app/social media I want to develope for fishermen to log and share their catch. 
 ---
+<img class="ui medium right floated rounded image" src="../menpachis.png">
 
-<img class="ui medium left floated rounded image" src="../imageswizard.png">
+Hawaiian Fishing Log is a mobile application I plan to develop in the near future. From my years of shore fishing on Kauai I have beared witness to the spike of popularity shore fishing has taken on in the past five years. My theory is that this was caused by the growing popularity of Instagram and Facebook where shore fisherpeople began to post their catches for their friends online. In reaction to this many people young and old have grabbed their tackle and poles creating a new generation of shoreline fisherpeople here in Hawaii.
 
-Cotton is a horror-esque text-based adventure game I developed using the functions and macros built from The Wizard's Game in [Conrad Barski's Land of Lisp](http://landoflisp.com/). Slightly more interesting and convoluted! (It is not that scary.)
-
-To give you a flavor of the game, here is an excerpt from one run:
+<img class="ui medium right floated rounded image" src="../imageswizard.png">
+Heres a me fishing on the napli coast
 
 <hr>
 
 <pre>
-You open your eyes, and you are greeted by an unfamiliar ceiling.
-Startled, you get to your feet and quickly scan your surroundings. It's
-dark except for the stream of light coming from a crack on the only boarded
-window in the room. You try to peek through the crack, but you cannot see
-anything. You wonder where you are and who could have possibly brought you here.
 
-<--------------------help------------------------>
-Enter quit or one of the following commands -
-Weld light look walk pickup inventory help h ?
-<------------------------------------------------>
+The Hawaiian Fishing Log(HFL) software takes this notion of posting ones catches and cranks it up a few notches. Not only will a user be able to post his or her catches and share it with their friends, they will be able to record data about their catch.  Some data will have to be input manually; rod, reel, lure, and the fishes dimensions; but a lot of the data will be stored automatically; such as tide, moon-phase, date, time, and location.  
 
-look
-The room is a picture of decay with only a faded number identifying it as room-4. The bed you were
- lying on is stained with what looks like dried blood. Could it be your blood? No - it is not. The
- only way out of the room aside from the door to the corridor is a window that is boarded shut. It
- looks like it has been like that for decades. There is a door going west from here. You see a candle
- on the floor. You see a match on the floor.
+One may one wonder, “why would a fisherperson want to have all that?”  One of the key components of shore fishing is being in the right place at the right time. It takes years to develop a sense for this.  HFL give fisherpeople an advantage by letting them cross reference their data and gain an idea for what variables work best for them.  Not only that, they would would be able to create groups and merge data to see if their tendencies as fishpeople hold strong in the case of other fisher people.
 
-pickup candle
-- you are now carrying the candle -
-
-pickup match
-- you are now carrying the match -
-
-light match candle
-
-The candle is now lit. It illuminates everything in the room.
-
-walk west
-The corridor is lit with the candle. It is so long that you cannot see to the end. You notice that
- there are words written on the wall. There is a door going east from here. There is a way going north
- from here. There is a door going south from here.
 </pre>
 
 <hr>

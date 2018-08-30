@@ -14,7 +14,7 @@ labels:
 summary: An app/social media I want to develope for fishermen to log and share their catch. 
 ---
 
-<img class="ui image" src="{{ site.baseurl }}/images/wizard.png">
+<img class="ui medium left floated rounded image" src="../imageswizard.png">
 
 Cotton is a horror-esque text-based adventure game I developed using the functions and macros built from The Wizard's Game in [Conrad Barski's Land of Lisp](http://landoflisp.com/). Slightly more interesting and convoluted! (It is not that scary.)
 

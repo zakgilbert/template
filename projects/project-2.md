@@ -11,7 +11,7 @@ labels:
   - EZ Graphics Library 
   - ICS 111 UH manoa
   - GitHub
-summary: You must heard all the Ninja's, or else....
+summary: You must herd all the Ninja's, or else....
 ---
 
 <img class="ui medium right floated rounded image" src="../images/ninjaP2.png">

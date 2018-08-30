@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/ninjaP2.png
+image: images/ninjaP0.png
 title: Ninja Shepard
 permalink: projects/vacay
 # All dates must be YYYY-MM-DD format!

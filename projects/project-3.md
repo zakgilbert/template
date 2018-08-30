@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/images/notecard-kagami.jpg
+image: images/notecard-kagami.jpg
 title: Hawaii Fishing Log
 permalink: projects/cotton
 # All dates must be YYYY-MM-DD format!

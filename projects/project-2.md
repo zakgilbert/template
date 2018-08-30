@@ -5,7 +5,7 @@ image: images/ninjaP0.png
 title: Ninja Shepard
 permalink: projects/vacay
 # All dates must be YYYY-MM-DD format!
-date: 2017-3-5
+date: 2017-03-05
 labels:
   - Java
   - EZ Graphics Library 

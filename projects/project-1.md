@@ -1,44 +1,31 @@
 ---
 layout: project
 type: project
-image: images/micromouse.jpg
-title: Micromouse
-permalink: projects/micromouse
+image: images/tank.jpg
+title: World of War TankZ
+permalink: projects/holo
 # All dates must be YYYY-MM-DD format!
-date: 2015-07-01
+date: 2018-07-01
 labels:
-  - Robotics
-  - Arduino
-  - C++
-summary: My team developed a robotic mouse that won first place in the 2015 UH Micromouse competition.
+  - Java
+  - Game
+  - Tanks
+  - Wretchro Graphics
+summary: A two player tank battle game my team and I wrote in my first computer science class.  Its safe to say that is my first game.
 ---
 
-<div class="ui small rounded images">
-  <img class="ui image" src="../images/micromouse-robot.png">
-  <img class="ui image" src="../images/micromouse-robot-2.jpg">
-  <img class="ui image" src="../images/micromouse.jpg">
-  <img class="ui image" src="../images/micromouse-circuit.png">
+<div class="ui large rounded images">
+  <img class="ui image" src="../images/Screenshot from 2018-08-27 22-31-21.png">
+  <img class="ui image" src="../images/Screenshot from 2018-08-27 23-11-53.png">
+  <img class="ui image" src="../images/Screenshot from 2018-08-27 23-12-02.png">
 </div>
 
-Micromouse is an event where small robot “mice” solve a 16 x 16 maze.  Events are held worldwide.  The maze is made up of a 16 by 16 gird of cells, each 180 mm square with walls 50 mm high.  The mice are completely autonomous robots that must find their way from a predetermined starting position to the central area of the maze unaided.  The mouse will need to keep track of where it is, discover walls as it explores, map out the maze and detect when it has reached the center.  having reached the center, the mouse will typically perform additional searches of the maze until it has found the most optimal route from the start to the center.  Once the most optimal route has been determined, the mouse will run that route in the shortest possible time.
+World of War TankZ was the final project for my first computer science class ICS 111 with professor Jason Leigh.  I designed all the sprite animation for this project, I designed the sprites on piskel.com which is an inbrowser sprite creator, and also wrote the code to animate the sprites with the giffAnime class I created.  We recieved second place int the end of the semester gaming contest for WWTZ. 
+This two player battle tank game lets the players drive through a maze and shoot at each other, move around the map and try to gather power ups to gain an advantage over your opponent. Use tactics and ricochet mechanics to outwit the other player. The first player to drop their opponent’s HP to 0 wins the game.
 
-For this project, I was the lead programmer who was responsible for programming the various capabilities of the mouse.  I started by programming the basics, such as sensor polling and motor actuation using interrupts.  From there, I then programmed the basic PD controls for the motors of the mouse.  The PD control the drive so that the mouse would stay centered while traversing the maze and keep the mouse driving straight.  I also programmed basic algorithms used to solve the maze such as a right wall hugger and a left wall hugger algorithm.  From there I worked on a flood-fill algorithm to help the mouse track where it is in the maze, and to map the route it takes.  We finished with the fastest mouse who finished the maze within our college.
+You can learn more at the [WorldofWarTankZ You Tube](https://www.youtube.com/watch?v=U1xXJ2DaE3A).
 
-Here is some code that illustrates how we read values from the line sensors:
-
-```js
-byte ADCRead(byte ch)
-{
-    word value;
-    ADC1SC1 = ch;
-    while (ADC1SC1_COCO != 1)
-    {   // wait until ADC conversion is completed   
-    }
-    return ADC1RL;  // lower 8-bit value out of 10-bit data from the ADC
-}
-```
-
-You can learn more at the [UH Micromouse Website](http://www-ee.eng.hawaii.edu/~mmouse/about.html).
+If you want to play WWTZ, the repository is on [Git Hub](https://github.com/zakgilbert/World-of-War-Tanks)
 
 
 

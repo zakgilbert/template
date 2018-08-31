@@ -28,6 +28,3 @@ One may one wonder, “why would a fisherperson want to have all that?”  One o
 For me the most exciting feature of HFL is that the software would give any user the ability to hold fishing contests.  These in my vision would be judged on the fishes length (not the weight) thus all you would need to do is post a picture of the fish being measured.  Not only would this give fisherpeople the ability to hold statewide competitions, it would open Hawaii up to the notion of tag and release fishing contests.
 
 
-
-Source: <a href="https://github.com/jogarces/ics-313-text-game"><i class="large github icon "></i>jogarces/ics-313-text-game</a>
-

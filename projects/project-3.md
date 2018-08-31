@@ -23,7 +23,7 @@ The Hawaiian Fishing Log(HFL) software takes this notion of posting ones catches
 
 One may one wonder, “why would a fisherperson want to have all that?”  One of the key components of shore fishing is being in the right place at the right time. It takes years to develop a sense for this.  HFL give fisherpeople an advantage by letting them cross reference their data and gain an idea for what variables work best for them.  Not only that, they would would be able to create groups and merge data to see if their tendencies as fishpeople hold strong in the case of other fisher people.
 
-<img class="ui large right rounded image" src="../images/myCatch.png">
+<img class="ui large rounded image" src="../images/myCatch.png">
 
 For me the most exciting feature of HFL is that the software would give any user the ability to hold fishing contests.  These in my vision would be judged on the fishes length (not the weight) thus all you would need to do is post a picture of the fish being measured.  Not only would this give fisherpeople the ability to hold statewide competitions, it would open Hawaii up to the notion of tag and release fishing contests.
 

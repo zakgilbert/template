@@ -15,8 +15,6 @@ labels:
 ---
 <img class="ui image" src="{{ site.baseurl }}/images/prototype-spawner.png">
 
-<img class="ui medium right floated rounded image" src="../images/eloquent.png">
-
 I had a slight brush with Javascript two summers ago when I attempted to work my way through Marijn Haverbeke’s [“Eloquent Javascript: A Modern Introduction to Programming”](https://eloquentjavascript.net/).  Through the first third of the book I felt fairly comfortable as I had already completed both phases of Introduction to Computer Science at University of Hawaii at Manoa (ICS 111, and ICS 211), which was taught in java. At a certain point the book started getting past the level that I had learned in school and I fought the good fight for a while. Eventually it got to the point,even after numerous attempts, where I did not understand what I was reading. And I didn’t see the point of copying the code, moving on and hoping that I would just understand it later, so I stopped. Since then I have taken the program structure class at Manoa (ICS 212), where I was introduced to the C programming language and C++. The most valuable things I took from these languages was a better understanding what is happening in memory, and the knowledge of how compilation works.  I realize now that understanding why these languages are different than Javascript, is the key to understanding Javascript itself.  I hope that after completing my software engineering class at Manoa I can return to “Eloquent,” and establish full comprehension of its message. 
 
 ## Javascript and Syntax

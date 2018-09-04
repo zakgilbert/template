@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/ninjaP0.png
 title: Ninja Shepherd
-permalink: projects/vacay
+permalink: projects/ninjaShephard
 # All dates must be YYYY-MM-DD format!
 date: 2017-03-05
 labels:

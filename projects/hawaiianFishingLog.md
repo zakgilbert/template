@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/menpachis.png
 title: Hawaiian Fishing Log
-permalink: projects/cotton
+permalink: projects/hawaiianFishingLog
 # All dates must be YYYY-MM-DD format!
 date: 2018-08-30
 labels:

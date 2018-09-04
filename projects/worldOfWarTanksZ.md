@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/tank.jpg
 title: World of War TankZ
-permalink: projects/holo
+permalink: projects/WWTZ
 # All dates must be YYYY-MM-DD format!
 date: 2018-07-01
 labels:

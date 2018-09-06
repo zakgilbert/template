@@ -7,6 +7,7 @@ date: 2018-08-30
 labels:
   - Social Media
   - Software
+  - Satire
 ---
 
 

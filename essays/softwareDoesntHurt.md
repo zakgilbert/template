@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: Software Doesn’t Hurt People, People Hurt Themselves
+title: Software Doesn’t Hurt People, People Hurt Themselves 
 # All dates must be YYYY-MM-DD format!
 date: 2018-08-30
 labels:
@@ -9,26 +9,21 @@ labels:
   - Software
 ---
 
+
+
+There’s a growing trend these days of people placing blame on the internet for being hurtful to our society. And by internet I mean all software as well, because almost all software utilizes the internet, therefore they’ve kind of become one. You can’t deny, the internet has changed everything, and will continue to do so for very a long time. But what effect does it have on us as humans? Are we addicts? Or are we just three year olds trying to play sudoku?
+
+## Is the internet/software addictive?
+First of all I’m in full agreement, the internet is a hundred percent addictive. I mean I saw a video on social media the other day, of some kid shrieking in horror as his dad ran over his xbox games with the lawn mower.  There's no argument against it, I myself spent countless hours as a child playing video games myself. Realistically though, is there anything that exists, that isn’t addictive? People would argue that there are good addictions and bad addictions, while this is mostly certainly true; who gets to decide this? Trump?  So my point is, merely acknowledging that something is addictive is not enough to witchify it as something that is harmful to society.
+
+<img class="ui medium right floated rounded image" src="../images/isac2.png">
+
+## Is mainstream software harmful? 
+Once again I agree that the internet is very harmful, but let me conjure up a quick example as to explain why I think it is.  Look at what we have done to social media, imagine if Sir Isaac Newton came to the present and we first showed how the internet has helped us put communicate with satellites from small devices all over the world,I bet he’d be pretty impressed at the progress we’ve since he “discovered gravity”. But then imagine after we showed him what the internet is capable of, we showed him facebook.  I think he might be just a tad disappointed. Common people, stop blaming the internet(by post via internet) and do something productive for once in your lives.  We have to remember that the only way that this software works is if we pick it up and use it.  Thus the only way that software can be harmful is if people intend to cause harm with it. 
+
 <img class="ui image" src="{{ site.baseurl }}/images/vader.jpeg">
 
-
-There’s a growing trend these days of people placing blame on social media and software for being hurtful to our society. Are we are too immature to handle these wonderful tools that software engineers have given us? Do the masses have the ability to stop and think that it might be their fault that software is causing this so called harm?
-
-## Is software addictive?
-
-First of all I’m in full agreement, software is definitely addictive. I mean I saw a video on social media the other day, of some kid shrieking in horror as his dad ran over his xbox games with the lawn mower.  There's no argument against it, I myself spent countless hours as a child playing video games myself. Realistically though, is there anything that exists, that isn’t addictive? People would argue that there are good addictions and bad addictions, while this is most certainly true; who gets to decide this? Trump?  So my point is, merely acknowledging that something is addictive is not enough to witchify it as something that is harmful to society.
-
-
-## Is mainstream software harmful?
-
-We have to remember that the only way that this software works is if we pick it up and use it.  Thus the only way that software can be harmful is if people intend to cause harm with it. It’s a double edged sword, but you can’t blame the software, people need to be responsible and start looking at themselves instead of blaming it on a bunch of ones and zeros.
-
-
-## It’s about bragging
-In my opinion social medias success is highly based on the fact that it lets people do what they like to do the most, which is brag and talk about themselves.  Yet the UK health and fitness market net worth as grown 20% from 2015 to 2018. According to an article in “The Guardian Weekly(08/10/2018) called “Mine’s a double workout!” they pinpoint social media as a key component in this boost in exercise popularity. They say that it's a great networking tool for the exercise community.  In my opinion this serge in physical exercise is directly fueled by  people bragging about being healthy and posting pictures of how good they look, therefore making other people want to do the same. So in this case even a negative aspect is seeming to have a positive effect.
-
-
-People need to remember, software and social media aren’t going away.  Our lives depend on it. It makes sense that a lot of people think it's evil. I mean who likes relying on a machine? But this is where things are going, and in retrospect look at all the great things we have because of it compared to the very small amount of disadvantages it supposably gives us. So I hope one day all these folks who see it as something evil will open up to it and realize that software is a great tool if used correctly and in my opinion is humanity's best hope for improving our societies and raising awareness about real issues. 
-
+## Shame on you!!
+That’s right, how dare you blame the internet. The internet doesn't ruin people, people ruined the internet.  Its funny how the Department of Defense funded the original entity that our internet sprouted from, so that they could  communicate quickly and anonymously with each other around the world, and now it's morphed into put everything you know about yourself online, and then get mad when people(corporations) take advantage. You see the problem here, shame one you for your lack of appreciation for this amazing tool computer science has given us.
 
 

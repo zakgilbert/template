@@ -11,7 +11,7 @@ labels:
   - Eric Steven Raymond
 ---
 
-<img class="ui image" src="{{ site.baseurl }}/images/people.jpeg">
+<img class="ui image" src="{{ site.baseurl }}/images/people.jpg">
 
 
 I’m baffled that just a few hundred years ago, a person might have been burned at the steak for asking the wrong questions.  These questions, a lot of the time, would have been considered good questions according to “How to Ask Questions the Smart Way?” by Eric Steven Raymond.  Raymond brings to light that now a days in the world of stack exchange and various web forums, the problem is a bit different.

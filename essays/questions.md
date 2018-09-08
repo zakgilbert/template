@@ -50,4 +50,4 @@ Not that I don’t believe this is a bad question, but there are so many resourc
 
 Raymonds Article is something I’ll never forget, it has made aware of a lot mistakes I’ve made not just on the internet but in real life. They should portray Raymonds teachings into a suitable curriculum for elementary school students.  In my opinion the sooner the better, because approaching social situations in a humbly assertive manner is no cake walk. It's got kind of a Zen feel to it, which I heard takes years to master. Now we live in this age of information and asking the right questions is far more important than knowing the right answers.
 
-Check oy Raymonds teachings at [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)
+Check out Raymonds teachings at [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)

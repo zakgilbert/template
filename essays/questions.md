@@ -11,12 +11,9 @@ labels:
   - Eric Steven Raymond
 ---
 
-<img class="ui image" src="{{ site.baseurl }}/images/people.jpeg">
-
-
 I’m baffled that just a few hundred years ago, a person might have been burned at the steak for asking the wrong questions.  These questions, a lot of the time, would have been considered good questions according to “How to Ask Questions the Smart Way?” by Eric Steven Raymond.  Raymond brings to light that now a days in the world of stack exchange and various web forums, the problem is a bit different.
 
-
+<img class="ui image" src="{{ site.baseurl }}/images/people.jpg">
 
 ## The Age of Questions
 With the way the internet works nowadays, we basically have any information we could ever want, right at our fingertips. That is, if we can ask google or whatever the right question.  I’m reminded of a time when my moms Fox Terrier/Papillon mix Bella had began to go through labor. Now Bella is barley ten pounds and I’d say that these puppies she began pushing out were around a pound, so it wasn’t easy. Anyways the third puppy came out feet first, and when most of its body was out leaving only the head inside, there began to be a problem. After being stuck for a minute or two I could see that the puppy’s umbilical cord was no longer in use and the she was suffocating. I began to assist, but I didn’t want to hurt Bella or the puppy so it took me a couple minutes to get her out of there. I held the motionless newborn in my hands and feltn the coldness of death coming into its body. I was reminded of a family friend who had a stroke, and then aspirated, which is when your lungs fill up with your own fluid and you drown. I put the puppy down, opened up my chrome browser, and typed these exact words, “new born puppy aspirating what do?” First thing that popped up was a Youtube video where a vet cleary explains that you need to use a baby nasal aspirator (which somehow we had) to suck fluid out of the puppies nose and then hold the puppy head up facing away from you and slowing swing it downwards so its head is facing upside down. Back and forth, this uses centripetal force to give the puppy a modified Heimlich maneuver. After a few minutes the puppy let out a squeaky little cough and she has gone on to live a happy life with some family friends.
@@ -57,4 +54,4 @@ Not that I don’t believe this is a bad question, but there are so many resourc
 
 Raymonds Article is something I’ll never forget, it has made aware of a lot mistakes I’ve made not just on the internet but in real life. They should portray Raymonds teachings into a suitable curriculum for elementary school students.  In my opinion the sooner the better, because approaching social situations in a humbly assertive manner is no cake walk. It's got kind of a Zen feel to it, which I heard takes years to master. Now we live in this age of information and asking the right questions is far more important than knowing the right answers.
 
-Check oy Raymonds teachings at [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)
+Check out Raymonds teachings at [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)

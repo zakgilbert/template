@@ -30,7 +30,7 @@ It’s my opinion that Raymonds article, could have an alternative title of “H
 But now I’m realizing that most of the questions I’ve been searching for could be stupid questions, and I feel that there are a lot of trolls with nothing better to than lead people astray. People who know what they’re talking about are far less likely to answer your questions because they’re busy getting paid to be the smart people that they are. As Raymond said; “Those people most likely to be able to give you a useful answer are also the busiest people (if only because they take on the most work themselves).” I personally am at such a beginning level with my programming, that I haven’t yet had the ability to conjure up a true problem worth asking about. But I know this time will come so I’m extremely grateful for Raymond and his ways.
 
 ## A Good Question
-This is the highest rated question on Stack Overflow at the moment. I think that it's a great question for Stack because for one it's not a about a bug, and two it’s mysterious, in that it’s a simple question about performance that people of all levels in computer scientist can understand, yet only people who understand coding are going to be able to answer it. Here it is….
+This is the highest rated question on Stack Overflow at the moment. I think that it's a great question for Stack because for one it's not a about a bug, and two it’s mysterious, in that it’s a simple question about performance that people of all levels in computer scientist can understand, yet only people who understand coding are going to be able to answer it. 
 
 [Why is it faster to process a sorted array than an unsorted array?](https://stackoverflow.com/questions/11227809/why-is-it-faster-to-process-a-sorted-array-than-an-unsorted-array)
 

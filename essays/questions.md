@@ -46,7 +46,7 @@ The op (original poster) asked a simply worded question in the header, then unde
 Not that I don’t believe this is a bad question, but there are so many resources online that can help you with this which is breaking Raymonds first rule so STFW.  This question implies that the op has never written code in either languages which means there's no real problem to be solved here. Are the Stack gods just supposed to descend from coding heaven and just explain everything to you. Op needs to show a little inertia and maybe at least do a “HelloWorld” in each programming languages before asking about the difference between them.  I think a better worded question would be, “As a beginner which Programming Language would be the best for me to start with?” But thats still push it as there so many resources out there that talk about this. My favorite response to this was “Java and Javascript are similar like Car and Carpet are similar.” Here's how I would have responded....
 
 ```
-    if( !OPhasNotwroteHelloWorld )
+    if( OPhasNotwroteHelloWorld )
         print(" Hey OP, you should write a "HelloWorld")
         return null;
 

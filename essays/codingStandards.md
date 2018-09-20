@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: An Aquired Taste
 # All dates must be YYYY-MM-DD format!
-date: 2018/09/20
+date: 2018-09-20
 labels:
   - Coding Standards
   - Programming

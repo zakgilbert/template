@@ -2,12 +2,15 @@
 layout: essay
 type: essay
 title: An Aquired Taste
+# All dates must be YYYY-MM-DD format!
 date: 2018/09/20
 labels:
   - Coding Standards
   - Programming
   - Software Development
 ---
+
+
 <img class="ui image" src="{{ site.baseurl }}/images/C-Coding-Standard.png">
 
  Do you remember the first time you read some other persons code? There's only a few likely outcomes, ether their code was prettier than yours and you hated them, or your code was prettier than theirs and you hated them. After learning the basics of a coding language you begin to develop a taste for what you would consider attractive looking code.  Now for those people, you knows who I’m talking about…

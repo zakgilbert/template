@@ -44,11 +44,8 @@ After learning the basics of a coding language you begin to develop a taste for 
 Seems like overkill doesn’t it? I think not; Imagine if someone you never meant had to figure out a program that you wrote without ever talking to you.  This is what should be in your head when commenting your code.  This way who ever is reading your program may not even have to read any code to comprehend whatever it is your program does. 
 
 ## You’re just a nobody
-Though I’ve never worked on a large scale project I can assert what a coding standard might do for a development project of ten or more people.  Problems will arise, thus by enforcing a standard you will be eliminating so many problems before they can even arise.  If your one of those people who prides themselves in having a unique coding style, just remember when it comes to the outcome of a large scale project, you're a nobody.  For the love of god, display some pragmatism. The only thing that matters is the final product, and getting to that final product is much easier when you adhere to the coding standards. 
-
  <img class="ui medium left floated rounded image" src="../images/ramsay.jpg ">
-
-
+Though I’ve never worked on a large scale project I can assert what a coding standard might do for a development project of ten or more people.  Problems will arise, thus by enforcing a standard you will be eliminating so many problems before they can even arise.  If your one of those people who prides themselves in having a unique coding style, just remember when it comes to the outcome of a large scale project, you're a nobody.  For the love of god, display some pragmatism. The only thing that matters is the final product, and getting to that final product is much easier when you adhere to the coding standards. 
 Just be grateful that you have quality assurance tools such as eslint, instead of some Gordon Ramsayesc coding standard enforcer that runs around the room pointing at your code saying stuff like, *“is that a satellite view of Beijing at rush hour?”*, or *“make sure to poke some holes in that code block so the variables can breathe.”*
 
 ## Developing Ones Tastes

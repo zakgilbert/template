@@ -2,7 +2,7 @@
 layout: essay
 type: essay
 title: An Acquired Taste
-date: 2018/09/20
+date: 2018-09-20
 labels:
   - Coding Standards
   - Programming

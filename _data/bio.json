@@ -49,6 +49,9 @@
     {
       "name": "The C Programming Language",
       "keywords": [
+        "SDL",
+        "Pointers",
+        "Functional Programming"
       ]
     },
     {
@@ -65,6 +68,9 @@
     {
       "name": "RPG Games",
       "keywords": [
+        "Square Soft",
+        "Dark Souls",
+        "Capcom"
 
       ]
     }
@@ -121,7 +127,7 @@
                   "Video Editing I, II",
                   "Color Correction",
                   "Acting for the Camera I, II",
-                  "Directing for the Cmaera",
+                  "Directing for the Camera",
                   "Sound Production",
                   "Introduction to Screen Writing",
                   "Advanced Screen Writing"
@@ -129,6 +135,50 @@
                 
 }  
   ],
+  "work": [
+    {
+      "company": "The Hanalei Dolphin / The Poipu Dolphin",
+      "position": "Sushi Chef/Kitchen Manager",
+      "website": "http://www.hanaleidolphin.com/index.htm",
+      "startDate": "2011-01-01",
+      "endDate": "2016-01-01",
+      "summary": "Started working here with prior Sushi Expierence and worked my way up",
+      "highlights": ["Worked my way up from prep cook to Kitchen Manager in two years", 
+                     "Was the youngest manager ever to work for Hanalei Dolphin corp."
+      ]
+    },
+  {
+    "company": "Postcards Cafe",
+    "position": "Line Cook",
+    "website": "http://www.postcardscafe.com/",
+    "startDate": "2013-01-01",
+    "endDate": "2014-01-01",
+    "summary": "Worked as a line cook along with my sushi job at the dolphin",
+    "highlights": [
+
+    ]
+  },
+  {
+    "company": "Tiki Iniki",
+    "position": "Line Cook",
+    "website": "http://www.tikiiniki.com/",
+    "startDate": "2015-01-01",
+    "endDate": "2016-01-01",
+    "summary": "Worked as a line cook along with my sushi job at the dolphin",
+    "highlights": [ "Worked with michillan star Chef [Kazuto Matsusaka](http://www.latimes.com/style/la-fo-calcook2mar02-story.html) of Beacon LA"
+  ]
+},
+{
+  "company": "Ichiban",
+  "position": "Sushi Chef",
+  "website": "https://www.yelp.com/biz/ichiban-santa-barbara",
+  "startDate": "2008-01-01",
+  "endDate": "2010-01-01",
+  "summary": "Worked as a sushi chef in a traditional Japanese Sushi restaurant",
+  "highlights": [ "I got to refine my Sushi skills with a Japanese trained Chef"
+]
+}
+],
   "awards": [
     {
       "title": "Second place",

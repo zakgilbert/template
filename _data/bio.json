@@ -1,6 +1,6 @@
 {
   "basics": {
-    "name": "Zachary Gilbert",
+    "name": "Zachary T. Gilbert",
     "label": "Student",
     "picture": "https://zakgilbert.github.io/images/square_me.png",
     "email": "gilbertz@hawaii.edu",
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "name": "artificial intelligence",
+      "name": "Artificial Intelligence",
       "keywords": [
       ]
     },
@@ -99,10 +99,34 @@
       "studyType": "B.S.",
       "startDate": "2018-01-01",
       "endDate": "Present",
-      "gpa": "",
-      "courses": [
+      "gpa": "3.6",
+      "courses": ["Intrdoduction to Computer Science I",
+                  "Data Structures",
+                  "Program Structure",
+                  "Discrete Mathematics I, II",
+                  "Calculus I, II",
+                  "Algorithms",
+                  "Sofware Engineering" 
       ]
     }
+    {
+      "institition": "Santa Barbara City College",
+      "area": "Film Production",
+      "studyType": "A.A",
+      "startDate": "2008-01-01",
+      "endDate": "2010-01-01",
+      "gpa": "3.8",
+      "courses": ["Film Studies",
+                  "Film Production I, II",
+                  "Video Editing I, II",
+                  "Color Correction",
+                  "Acting for the Camera I, II",
+                  "Directing for the Cmaera",
+                  "Sound Production",
+                  "Introduction to Screen Writing",
+                  "Advanced Screen Writing"
+                  ]
+}  
   ],
   "awards": [
     {

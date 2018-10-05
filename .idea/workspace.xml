@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d69f0fec-fd6e-4e47-9608-89c0c7f37645" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/essays/frameWorks.md" beforeDir="false" afterPath="$PROJECT_DIR$/essays/frameWorks.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +14,7 @@
     <session id="1004660538">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -37,12 +37,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="5132" />
+          <entry key="md" value="5136" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="5132" />
+          <entry key="Markdown" value="5136" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -79,8 +79,8 @@
         <entry file="file://$PROJECT_DIR$/essays/frameWorks.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="998">
-                <caret line="21" column="763" lean-forward="true" selection-start-line="21" selection-start-column="763" selection-end-line="21" selection-end-column="763" />
+              <first_editor relative-caret-position="102">
+                <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
               </first_editor>
               <second_editor />
             </state>
@@ -117,8 +117,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="41" />
     <option name="y" value="22" />
-    <option name="width" value="1827" />
-    <option name="height" value="1058" />
+    <option name="width" value="1717" />
+    <option name="height" value="999" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -213,7 +213,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="22" width="1827" height="1058" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20257415" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -302,8 +301,8 @@
     <entry file="file://$PROJECT_DIR$/essays/frameWorks.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="998">
-            <caret line="21" column="763" lean-forward="true" selection-start-line="21" selection-start-column="763" selection-end-line="21" selection-end-column="763" />
+          <first_editor relative-caret-position="102">
+            <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
           </first_editor>
           <second_editor />
         </state>

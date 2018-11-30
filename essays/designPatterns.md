@@ -10,7 +10,7 @@ labels:
   - Object Oriented Programming
   - Polymorphism
 ---
-<img class="ui image" src="{{ site.baseurl }}/images/patterns.png">
+<img class="ui image" src="{{ site.baseurl }}/images/patterns.jpg">
 
 In the case of software engineering design patterns put, the otherwise ignored elephant in the room that is the creative side of computer science, into the spotlight.  Most programmers don’t even think of CS as being something that is creative, as their eyes have been colored in with the dry erase pens from white board tests, and their face sat upon by the 800 pound gorilla that is discrete math.  But if you look at the notion of design patterns from any other branch of human innovation you’ll see that they actually fit into a the larger set of patterns that encompass many art forms.  Look at textiles, weaving has been a part of humanity since the beginning.  The design pattern being, the algorithm that is specific to that style of weaving. The only difference really is that when one looks at the final product of a piece of software, what a programmer would consider the design pattern will never be visible to the eye.
 

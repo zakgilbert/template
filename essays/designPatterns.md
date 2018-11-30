@@ -6,9 +6,9 @@ title: A Gorilla and an Elephant Walk into a Bar
 date: 2018-11-29
 labels:
   - Design Patterns
-  - Software Engeinering
+  - Software Engineering
   - Object Oriented Programming
-  - Web Development
+  - Polymorphism
 ---
 
 <img class="ui medium right floated rounded image" src="../images/800.jpg">

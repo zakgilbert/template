@@ -24,4 +24,4 @@ An example of a design pattern would be the observer solution.  Lets say you hav
 	
 I’m starting to think that teaching computer science might be more challenging than actual programming.  I think a lot of people would disagree because the existence of design patterns.  Luckily there are is a vast ocean of design patterns out there to choose from.  For me when I have so many choices its really hard, and if you pick the wrong design pattern it would be extremely counter productive(you’d have to start over.) So I think the most important thing to take away from this lesson is to be aware of the popular designs,  and create something that works specifically for your program but resembles a pattern that already exists.
 
-And remember, trying to wue a stubborn elephant while wrestling an 800 gorilla, is best done as a team.
+And remember, trying to woo a stubborn elephant while wrestling an 800 gorilla, is best done as a team.

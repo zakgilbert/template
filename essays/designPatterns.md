@@ -10,11 +10,11 @@ labels:
   - Object Oriented Programming
   - Polymorphism
 ---
-<img class="ui image" src="{{ site.baseurl }}/images/patterns.jpg">
+<img class="ui medium right floated rounded image" src="../images/800.jpg">
 
 In the case of software engineering design patterns put, the otherwise ignored elephant in the room that is the creative side of computer science, into the spotlight.  Most programmers don’t even think of CS as being something that is creative, as their eyes have been colored in with the dry erase pens from white board tests, and their face sat upon by the 800 pound gorilla that is discrete math.  But if you look at the notion of design patterns from any other branch of human innovation you’ll see that they actually fit into a the larger set of patterns that encompass many art forms.  Look at textiles, weaving has been a part of humanity since the beginning.  The design pattern being, the algorithm that is specific to that style of weaving. The only difference really is that when one looks at the final product of a piece of software, what a programmer would consider the design pattern will never be visible to the eye.
 
-<img class="ui medium right floated rounded image" src="../images/800.jpg">
+<img class="ui medium left floated rounded image" src="../images/patterns.jpg">
 
 That’s right, design patterns in sense of software engineering have nothing to do with the visual medium of a program.  While it would be good to follow a certain underlying theme in your user interface, when an engineer is talking design patterns, they’re talking about the structure of their code.  As one can already probably tell, quelling into the subject of design patterns via computer science, with no knowledge of programming will make your face hurt (not from the gorilla.)  Being aware of object oriented programming and the concept of polymorphism is the 800 pound gorilla of understanding design patterns.  The most common way to explain anything subject in computer science is to sit them down and draw lots of squares with arrows pointing and stuff.  But since this is an essay and not a screen cast I will do my best with my words.
 

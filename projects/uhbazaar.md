@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: images/uhbazaarlogo.png
-title: [Uh Bazaar](https://github.com/uhbazaar/uhbazaar)
+title: Uh Bazaar
 permalink: projects/uhbazaar
 # All dates must be YYYY-MM-DD format!
 date: 2018-12-09

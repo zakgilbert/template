@@ -33,7 +33,7 @@ When a user clicks on a category, they are brought to the category page, which d
 
 The user can sort the items in various ways and switch to a list view.  The user can only sort by one option at a time, thus only one checkbox can appear to be checked at a time.  If you move the slider to the right it will reverse the order of the current sort function you are using. Implementing the check boxes to sort and display properly was probably the most challenging programming I've done in this class. Here's my checkbox jsx function.
 
-```jsx harmony
+```
 const titleCheckbox = (
         <Checkbox checked={this.state.titleIsActive} onClick={() => this.setState({
           sorter: 'title',
@@ -48,7 +48,7 @@ const titleCheckbox = (
 ```
 Basically if that checkbox is clicked on it will rerender the page using ```setState``` with all these certain boolean states set to the appropriate logic. Here's my sorting function
 
-```javascript
+```
 sortByItem(items, cat, sortKey, Component, reverse) {
     const stuff = sortBy(items, sortKey);
     if (reverse) {
@@ -59,7 +59,7 @@ sortByItem(items, cat, sortKey, Component, reverse) {
   }
 ```
 And for the toggle switches we have this...
-```jsx harmony
+```
 const priceToggle = (
         <Checkbox checked={this.state.priceToggle} disabled={!this.state.priceIsActive}
                   onClick={() => this.setState({ priceToggle: !this.state.priceToggle, reverse: !this.state.reverse })}

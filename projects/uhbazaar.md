@@ -16,7 +16,7 @@ summary: A craiglistian style web app geared for the Uh Manoa Community
 
 <img class="ui medium left floated rounded image" src="../images/land.png">
 
-[Uh Bazaar](http://uhbazaar.meteorapp.com/#/) is a user based web app geared towards the University of Hawaii at Manoa that [Wyatt Hoodes](https://github.com/whoodes), [Leahmei Villanueva](https://github.com/leahmeiv), [Michael Boyle](https://github.com/boyle-michael), and I, put together for our Information and Computer Sciences 314: Software Engineering classes final project.  It shares a commonality with craiglist as it gives a user the ability to place and post items that they want for sale.  A user must have an account and be logged in, in order to access the market. 
+[Uh Bazaar](https://github.com/uhbazaar/uhbazaar) is a user based web app geared towards the University of Hawaii at Manoa that [Wyatt Hoodes](https://github.com/whoodes), [Leahmei Villanueva](https://github.com/leahmeiv), [Michael Boyle](https://github.com/boyle-michael), and I, put together for our Information and Computer Sciences 314: Software Engineering classes final project.  It shares a commonality with craiglist as it gives a user the ability to place and post items that they want for sale.  A user must have an account and be logged in, in order to access the market. 
 
 ### How I Played My Part 
 

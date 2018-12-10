@@ -14,7 +14,7 @@ labels:
 summary: A craiglistian style web app geared for the Uh Manoa Community
 ---
 
-<img class="ui medium right floated rounded image" src="../images/land.png">
+<img class="ui medium left floated rounded image" src="../images/land.png">
 
 [Uh Bazaar](http://uhbazaar.meteorapp.com/#/) is a user based web app geared towards the University of Hawaii at Manoa that [Wyatt Hoodes](https://github.com/whoodes), [Leahmei Villanueva](https://github.com/leahmeiv), [Michael Boyle](https://github.com/boyle-michael), and I, put together for our Information and Computer Sciences 314: Software Engineering classes final project.  It shares a commonality with craiglist as it gives a user the ability to place and post items that they want for sale.  A user must have an account and be logged in, in order to access the market. 
 
@@ -24,7 +24,7 @@ summary: A craiglistian style web app geared for the Uh Manoa Community
 
 After making a profile a user navigates to the categories pages via the navigation bar at the top of the page, this is the beginning of my main focus in the development of this app. The categories are listed dynamically from the apps data pool.  Someone with administrative access can add and remove categories.  When a user adds an item they choose from the list of categories.  
 
-<img class="ui medium right floated rounded image" src="../images/cat.png">
+<img class="ui medium left floated rounded image" src="../images/cat.png">
 
 When a user clicks on a category, they are brought to the category page, which displays all the items for sale within that category.  The items are listed dynamically through the category menu component.  The details of the item are broadcast via the [card module from semantic react](https://react.semantic-ui.com/views/card/) . 
 

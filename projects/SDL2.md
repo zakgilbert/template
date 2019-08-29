@@ -49,7 +49,9 @@ The following style of C coding is a technique I've adapted from [cirocosta](htt
 
 - ### my_class.c
     
-    > Moving on to the C file
+    > In the *.c* file we define a set of static functions that match the function pointers we declared previously.  These are the functions that the function pointers will point too.  Take note of the leading underscores, such that...
+        
+    > `void (*destroy)(struct _my_class *this)` in *.h*, will point to `static void _destroy(my_class *this)` in *.c*.
 
     ```c
     #include <stdio.h>
@@ -83,7 +85,13 @@ The following style of C coding is a technique I've adapted from [cirocosta](htt
     }
     ```
 
+    > Define the *constructor* method which, allocates a pointer(*this*) to your class.
+    
+    > Assign the declared function pointers to their corresponding function and return the class object pointer.
+
 - ### main.c
+
+    > Now in main create an instance of the class object, and call the print function.
 
     ```c
     #include <stdio.h>
@@ -100,6 +108,8 @@ The following style of C coding is a technique I've adapted from [cirocosta](htt
         return 0;
     }
     ```
+
+    > And then, free your pointer with the *destroy* method.
 
 
 ### Delta Time

@@ -42,42 +42,43 @@ The following style of C coding is a technique I've adapted from [cirocosta](htt
 
     #endif /* MY_CLASS_H */
     ```
-- The typedef
+- The typedef declaration defines a structure `_my_class` as a named type `my_class`. The leading underscore is a naming convention that I've adopted which, as you will see in the future, will give us a more readable namespace. There are two variables defined as function pointers(`destroy` and `print`.) Note that actual function prototypes can not be defined within a typedef declaration. Feel free to add any C primitives that you will need access to via your class. Last we define a function which returns a pointer to your class obj, It might be helpful for you to think of this as the constructor for your class.
+
 ### my_class.c
 
-```c
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "my_class.h"
+- Moving on to the C file
+    ```c
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
+    #include "my_class.h"
 
-/* Free allocated memory */
-static void _destroy(my_class *this)
-{
-    if (NULL != this) {
-        free(this);
-        this = NULL;
+    /* Free allocated memory */
+    static void _destroy(my_class *this)
+    {
+        if (NULL != this) {
+            free(this);
+            this = NULL;
+        }
     }
-}
 
-/* print a string with newline */
-static void _print(my_class *this, const char *str)
-{
-    printf("%s\n", str);
-}
+    /* print a string with newline */
+    static void _print(my_class *this, const char *str)
+    {
+        printf("%s\n", str);
+    }
 
-/* Allocated memory for object */
-my_class *CREATE_MY_CLASS()
-{
-    my_class *this = malloc(sizeof(*this));
-    this->destroy = _destroy;
-    this->print = _print;
+    /* Allocated memory for object */
+    my_class *CREATE_MY_CLASS()
+    {
+        my_class *this = malloc(sizeof(*this));
+        this->destroy = _destroy;
+        this->print = _print;
 
-    return this;
-}
-
-```
-
+        return this;
+    }
+    ```
+- The "'Constructor'"
 ### main.c
 
 ```c

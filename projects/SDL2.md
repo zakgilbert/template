@@ -125,9 +125,11 @@ The Simple Directmedia Layer or [SDL](https://www.libsdl.org/) has been the plig
 
 
 
-<img class="ui medium left floated image" src="../images/delta.png">
 
 2. ## Delta Time
+
+    <img class="ui medium left floated image" src="../images/delta.png">
+
     > A novice programmer will be eager create graphics, and that's okay. Just remember, for implementing anything more complex than rendering a single frame to the screen, delta time is required. Creating a method that returns delta time is key in ensuring that SDL doesn't fry your cpu.  Running a game loop without delta is equivalent to the following C code.
 
     ```c
@@ -204,7 +206,7 @@ The Simple Directmedia Layer or [SDL](https://www.libsdl.org/) has been the plig
     > Otherwise low frame rate should not occur in small projects and should be a warning that something in the code base is taking way longer than it should. A common mistake is that the programmer has not implemented their code such that the rendering and logic are separate. See the pseodocode as follows...
 
     ```c
-    int game(Sprite sprite, Renderer renderer)
+    int game(Sprite *sprite, Renderer *renderer)
     {
         if(sprite->faces_left(sprite)) {
             render(renderer, sprite->left_frame(sprite, renderer));

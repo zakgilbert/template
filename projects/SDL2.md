@@ -126,7 +126,7 @@ The ability to create multiple objects of the same type that share the same func
 
 Using this convention will help a coder realize why `C++` and `Java` were created and gain an appreciation for the people who created them.  As for SDL, keeping logic and graphics rendering separated is now an option, among other things.
 
-### Delta Time
+## Delta Time
 
 <img class="ui medium left floated image" src="../images/delta.png">
 
@@ -137,7 +137,6 @@ int main(int argc, char ** argv)
 {
     while(1)
         ;
-    
     return 0;
 }
 ```
@@ -149,14 +148,11 @@ Many online sources over complicate delta time; and for good reason as there are
 int main(int argc, char ** argv)
 {
     unsigned int IPS = 1;   /* Iterations per second */
-
     while(1) {
         /* render */
         /* now do something */
-
         sleep(IPS);
     }
-    
     return 0;
 }
 ```
@@ -177,15 +173,11 @@ while(running)
     timer := time_now - time_before
     ticks := ticks + timer
     time_before := time_now
-
     render() //render a frame
     frames_rendered ++
-
     logic()  //perform logic
-    
     if(timer < time_per_tick)
         delay(time_per_tick - timer)  // see SDL_Delay
-    
     if(ticks > ticks_per_second)
         ticks := 0
         print(frames_rendered)
@@ -196,7 +188,6 @@ One could argue that this implementation is not an implementation of delta time 
 
 ```java
 delta_time:
-
 while(running)
     delta_time := calculate_delta()
     if(delta_time > 1)

@@ -22,10 +22,9 @@ summary: A look at my personal endeavors with SDL2 and the C programming languag
 
 The Simple Directmedia Layer or [SDL](https://www.libsdl.org/) has been the plight of my coding life for the past year. As most new programmers do, I too yearned to write my own 2D game.  I chose a graphics library built for C because I enjoy C and I saw it as a fun way to gain coding experience. After a year, the result is a small library the allows one to write a simple 2D game in a relatively short amount of time. The following accounts highlight the problems I encountered and the results the spawned as I solved these problems.
 
-### Creating Classes in C
+## Creating Classes in C
 
 #### my_class.h
-
 ```c
 #ifndef MY_CLASS_H
 #define MY_CLASS_H
@@ -33,7 +32,6 @@ The Simple Directmedia Layer or [SDL](https://www.libsdl.org/) has been the plig
 typedef struct _my_class
 {
     void (*destroy)(struct _my_class *this);
-
     void (*print)(struct _my_class *this, const char *str);
 } my_class;
 
@@ -45,10 +43,6 @@ my_class *CREATE_MY_CLASS();
 #### my_class.c
 
 ```c
-/************************
-	 *  my_class.c
-	*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -92,8 +86,8 @@ my_class *CREATE_MY_CLASS()
 int main(int argc, char **argv)
 {
     my_class *my_class_obj = CREATE_MY_CLASS();
-
     my_class_obj->print(my_class_obj, "Hello World!");
+    my_class_obj->destroy(my_class_obj);
 
     return 0;
 }

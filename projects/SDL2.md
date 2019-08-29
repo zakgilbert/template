@@ -26,7 +26,7 @@ The Simple Directmedia Layer or [SDL](https://www.libsdl.org/) has been the plig
 
 #### my_class.h
 
-```
+```c
 #ifndef MY_CLASS_H
 #define MY_CLASS_H
 
@@ -44,7 +44,7 @@ my_class *CREATE_MY_CLASS();
 
 #### my_class.c
 
-```
+```c
 /************************
 	 *  my_class.c
 	*/
@@ -83,7 +83,7 @@ my_class *CREATE_MY_CLASS()
 
 #### main.c
 
-```
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -23,108 +23,105 @@ summary: A look at my personal endeavors with SDL2 and the C programming languag
 The Simple Directmedia Layer or [SDL](https://www.libsdl.org/) has been the plight of my coding life for the past year. As most new programmers do, I too yearned to write my own 2D game.  I chose a graphics library built for C because I enjoy C and I saw it as a fun way to gain coding experience. After a year, the result is a small library the allows one to write a simple 2D game in a relatively short amount of time. The following accounts highlight the problems I encountered and the results the spawned as I solved these problems.
 
 1. ## Creating Classes in C
+    > The following style of C coding is a technique I've adapted from [cirocosta](https://github.com/cirocosta/observer-c) via github.  Despite the fact that inheritance is still not an option, I find that developing your C code in the following manner helps with keeping an organized name space, preventing redundant code, and producing a less convoluted main function. Note that the following convention has nothing to do with SDL directly and only serves as a great vehicle to implement GUI programs with the graphics library.
 
-The following style of C coding is a technique I've adapted from [cirocosta](https://github.com/cirocosta/observer-c) via github.  Despite the fact that inheritance is still not an option, I find that developing your C code in the following manner helps with keeping an organized name space, preventing redundant code, and producing a less convoluted main function. Note that the following convention has nothing to do with SDL directly and only serves as a great vehicle to implement GUI programs with the graphics library.
+   - ### my_class.h
+        > Starting with *my_class.h*, we can see that we are declaring our prototypes within a block of preprocessor directives. Defining `#ifndef` ensures that the declarations which follow it, until defining `#endif`, will only be declared once, thus preventing a linker error.
 
-- ### my_class.h
-    
-    > Starting with *my_class.h*, we can see that we are declaring our prototypes within a block of preprocessor directives. Defining `#ifndef` ensures that the declarations which follow it, until defining `#endif`, will only be declared once, thus preventing a linker error.
-    
-    ```c
-    #ifndef MY_CLASS_H
-    #define MY_CLASS_H
+        ```c
+        #ifndef MY_CLASS_H
+        #define MY_CLASS_H
 
-    typedef struct _my_class
-    {
-        void (*destroy)(struct _my_class *this);
-        void (*print)(struct _my_class *this);
-        const char * str;
-    } my_class;
+        typedef struct _my_class
+        {
+            void (*destroy)(struct _my_class *this);
+            void (*print)(struct _my_class *this);
+            const char * str;
+        } my_class;
 
-    my_class *CREATE_MY_CLASS(const char * str);
+        my_class *CREATE_MY_CLASS(const char * str);
 
-    #endif /* MY_CLASS_H */
-    ```
+        #endif /* MY_CLASS_H */
+        ```
 
-    > The typedef declaration prototypes a structure `_my_class` as a named type `my_class`. The leading underscore is a naming convention that I've adopted which, as you will see in the future, will give us a more readable namespace. There are two variables declared as function pointers(`destroy` and `print`.) Note that actual function prototypes can not be declared within a typedef declaration. Feel free to add any C primitives that you will need access to via your class. Last we declare a function which returns a pointer to your class obj, It might be helpful for you to think of this as the constructor for your class.
+        > The typedef declaration prototypes a structure `_my_class` as a named type `my_class`. The leading underscore is a naming convention that I've adopted which, as you will see in the future, will give us a more readable namespace. There are two variables declared as function pointers(`destroy` and `print`.) Note that actual function prototypes can not be declared within a typedef declaration. Feel free to add any C primitives that you will need access to via your class. Last we declare a function which returns a pointer to your class obj, It might be helpful for you to think of this as the constructor for your class.
 
-- ### my_class.c
-    
-    > In the *.c* file we define a set of static functions that match the function pointers we declared previously.  These are the functions that the function pointers will point too.  Take note of the leading underscores, such that...
+   - ### my_class.c
+        > In the *.c* file we define a set of static functions that match the function pointers we declared previously.  These are the functions that the function pointers will point too.  Take note of the leading underscores, such that...
         
-    > `void (*destroy)(struct _my_class *this)` in *.h*, will point to `static void _destroy(my_class *this)` in *.c*.
+        > `void (*destroy)(struct _my_class *this)` in *.h*, will point to `static void _destroy(my_class *this)` in *.c*.
+        
+        
+        ```c
+        #include <stdio.h>
+        #include <stdlib.h>
+        #include <string.h>
+        #include "my_class.h"
 
-    ```c
-    #include <stdio.h>
-    #include <stdlib.h>
-    #include <string.h>
-    #include "my_class.h"
-
-    /* Free allocated memory */
-    static void _destroy(my_class *this)
-    {
-        if (NULL != this) {
-            free(this);
-            this = NULL;
+        /* Free allocated memory */
+        static void _destroy(my_class *this)
+        {
+            if (NULL != this) {
+                free(this);
+                this = NULL;
+            }
         }
-    }
 
-    /* print a string with newline */
-    static void _print(my_class *this)
-    {
-        printf("%s\n", this->str);
-    }
+        /* print a string with newline */
+        static void _print(my_class *this)
+        {
+            printf("%s\n", this->str);
+        }
 
-    /* Allocated memory for object */
-    my_class *CREATE_MY_CLASS(const char * str)
-    {
-        my_class *this = malloc(sizeof(*this));
-        this->destroy = _destroy;
-        this->print = _print;
-        this->str = str;
+        /* Allocated memory for object */
+        my_class *CREATE_MY_CLASS(const char * str)
+        {
+            my_class *this = malloc(sizeof(*this));
+            this->destroy = _destroy;
+            this->print = _print;
+            this->str = str;
 
-        return this;
-    }
-    ```
+            return this;
+        }
+        ```
 
-    > Define the *constructor* method which allocates a pointer(*this*) to your class.
-    
-    > Assign the declared function pointers to their corresponding function and return the class object pointer.
+        > Define the *constructor* method which allocates a pointer(*this*) to your class.
+        
+        > Assign the declared function pointers to their corresponding function and return the class object pointer.
 
-- ### main.c
+    - ### main.c
+        > Now in main, create an instance of the class object, and call the print function.
+        
+        ```c
+        #include <stdio.h>
+        #include <stdlib.h>
+        #include <string.h>
+        #include "my_class.h"
 
-    > Now in main, create an instance of the class object, and call the print function.
+        int main(int argc, char **argv)
+        {
+            my_class *hello_obj = CREATE_MY_CLASS("HelloWorld!");
+            hello_obj->print(hello_obj);
+            hello_obj->destroy(hello_obj);
 
-    ```c
-    #include <stdio.h>
-    #include <stdlib.h>
-    #include <string.h>
-    #include "my_class.h"
+            my_class *goodbye_obj = CREATE_MY_CLASS("GoodbyeWorld!");
+            goodbye_obj->print(goodbye_obj);
+            goodbye_obj->destroy(goodbye_obj);
 
-    int main(int argc, char **argv)
-    {
-        my_class *hello_obj = CREATE_MY_CLASS("HelloWorld!");
-        hello_obj->print(hello_obj);
-        hello_obj->destroy(hello_obj);
+            return 0;
+        }
+        ```
 
-        my_class *goodbye_obj = CREATE_MY_CLASS("GoodbyeWorld!");
-        goodbye_obj->print(goodbye_obj);
-        goodbye_obj->destroy(goodbye_obj);
+        > Free your pointer with the *destroy* method.
 
-        return 0;
-    }
-    ```
+    > The ability to create multiple objects of the same type that share the same functions and primitives; lets the C coder implement and understand C in a few ways.
 
-    > Free your pointer with the *destroy* method.
+    1. Avoid functions with an awkward number of parameters my passing the object instead
+    2. Return multiple variables.
+    3. Gain a stronger understanding of function pointers.
+    4. Avoid memory leaks by encapsulating allocation and de-allocation methods.
 
-The ability to create multiple objects of the same type that share the same functions and primitives; lets the C coder implement and understand C in a few ways.
-
-1. Avoid functions with an awkward number of parameters my passing the object instead.
-2. Return multiple variables.
-3. Gain a stronger understanding of function pointers.
-4. Avoid memory leaks by encapsulating allocation and de-allocation methods.
-
-Using this convention will help a coder realize why `C++` and `Java` were created and gain an appreciation for the people who created them.  As for SDL, keeping logic and graphics rendering separated is now an option, among other things.
+    > Using this convention will help a coder realize why `C++` and `Java` were created and gain an appreciation for the people who created them.  As for SDL, keeping logic and graphics rendering separated is now an option, among other things.
 
 <img class="ui medium left floated image" src="../images/delta.png">
 
@@ -219,4 +216,4 @@ Using this convention will help a coder realize why `C++` and `Java` were create
     
     > The latter displays numerous problems, in SDL you want to avoid passing the renderer into functions that take it out of the scope of main. A different way to say this is, avoid surrounding render calls with conditional. One frame may contain a lot of textures that all need to be rendered to the canvas separately. The cleanest way to implement this is to render all your textures one after the other. This is not easy to do such that, the textures, coordinates, and properties ...etc of a game object will be encapsulated within the object.  The following section was the way I dealt with this problem.
 
-3. ## Writing My Own Render Queue
+2. ## Writing My Own Render Queue

@@ -24,6 +24,8 @@ The Simple Directmedia Layer or [SDL](https://www.libsdl.org/) has been the plig
 
 ## Creating Classes in C
 
+The following style of C coding is a technique I've adapted from [cirocosta](https://github.com/cirocosta/observer-c) via github.  Despite the fact that inheritance is still not an option, I find that developing your C code in the following manner helps with, keeping an organized name space, preventing redundant code, and producing a less convoluted main function. 
+
 ### my_class.h
 ```c
 #ifndef MY_CLASS_H
@@ -39,7 +41,7 @@ my_class *CREATE_MY_CLASS();
 
 #endif /* MY_CLASS_H */
 ```
-
+Starting with * my_class.h * we can see that we are defining our prototypes within a block of preprocessor directives. `#ifndef` ensures that the declarations which follow it, until `#endif` is called, will only be declared once, thus preventing a linker error.
 ### my_class.c
 
 ```c

@@ -27,7 +27,9 @@ The Simple Directmedia Layer or [SDL](https://www.libsdl.org/) has been the plig
 The following style of C coding is a technique I've adapted from [cirocosta](https://github.com/cirocosta/observer-c) via github.  Despite the fact that inheritance is still not an option, I find that developing your C code in the following manner helps with, keeping an organized name space, preventing redundant code, and producing a less convoluted main function. 
 
 - ### my_class.h
+    
     > Starting with *my_class.h* we can see that we are defining our prototypes within a block of preprocessor directives. Defining `#ifndef` ensures that the declarations which follow it, until defining `#endif`, will only be declared once, thus preventing a linker error.
+    
     ```c
     #ifndef MY_CLASS_H
     #define MY_CLASS_H
@@ -42,10 +44,13 @@ The following style of C coding is a technique I've adapted from [cirocosta](htt
 
     #endif /* MY_CLASS_H */
     ```
+
     > The typedef declaration defines a structure `_my_class` as a named type `my_class`. The leading underscore is a naming convention that I've adopted which, as you will see in the future, will give us a more readable namespace. There are two variables defined as function pointers(`destroy` and `print`.) Note that actual function prototypes can not be defined within a typedef declaration. Feel free to add any C primitives that you will need access to via your class. Last we define a function which returns a pointer to your class obj, It might be helpful for you to think of this as the constructor for your class.
 
 - ### my_class.c
+    
     > Moving on to the C file
+
     ```c
     #include <stdio.h>
     #include <stdlib.h>
@@ -77,7 +82,9 @@ The following style of C coding is a technique I've adapted from [cirocosta](htt
         return this;
     }
     ```
+
 - ### main.c
+
     ```c
     #include <stdio.h>
     #include <stdlib.h>
@@ -93,6 +100,7 @@ The following style of C coding is a technique I've adapted from [cirocosta](htt
         return 0;
     }
     ```
+
 
 ### Delta Time
 

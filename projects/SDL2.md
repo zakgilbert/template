@@ -22,7 +22,7 @@ summary: A look at my personal endeavors with SDL2 and the C programming languag
 
 The Simple Directmedia Layer or [SDL](https://www.libsdl.org/) has been the plight of my coding life for the past year. As most new programmers do, I too yearned to write my own 2D game.  I chose a graphics library built for C because I enjoy C and I saw it as a fun way to gain coding experience. After a year, the result is a small library the allows one to write a simple 2D game in a relatively short amount of time. The following accounts highlight the problems I encountered and the results the spawned as I solved these problems.
 
-## Creating Classes in C
+1. ## Creating Classes in C
 
 The following style of C coding is a technique I've adapted from [cirocosta](https://github.com/cirocosta/observer-c) via github.  Despite the fact that inheritance is still not an option, I find that developing your C code in the following manner helps with keeping an organized name space, preventing redundant code, and producing a less convoluted main function. Note that the following convention has nothing to do with SDL directly and only serves as a great vehicle to implement GUI programs with the graphics library.
 
@@ -126,74 +126,73 @@ The ability to create multiple objects of the same type that share the same func
 
 Using this convention will help a coder realize why `C++` and `Java` were created and gain an appreciation for the people who created them.  As for SDL, keeping logic and graphics rendering separated is now an option, among other things.
 
-## Delta Time
-
 <img class="ui medium left floated image" src="../images/delta.png">
 
-A novice programmer will be eager create graphics, and that's okay. Just remember, for implementing anything more complex than rendering a single frame to the screen, delta time is required. Creating a method that returns delta time is key in ensuring that SDL doesn't fry your cpu.  Running a game loop without delta is equivalent to the following C code.
+2. ## Delta Time
+    > A novice programmer will be eager create graphics, and that's okay. Just remember, for implementing anything more complex than rendering a single frame to the screen, delta time is required. Creating a method that returns delta time is key in ensuring that SDL doesn't fry your cpu.  Running a game loop without delta is equivalent to the following C code.
 
-```c
-int main(int argc, char ** argv)
-{
-    while(1)
-        ;
-    return 0;
-}
-```
-
-Many online sources over complicate delta time; and for good reason as there are numerous implementations that vary. I hope that with respect to simplicity, the following function explains one variation delta time quite well.
-
-
-```c
-int main(int argc, char ** argv)
-{
-    unsigned int IPS = 1;   /* Iterations per second */
-    while(1) {
-        /* render */
-        /* now do something */
-        sleep(IPS);
+    ```c
+    int main(int argc, char ** argv)
+    {
+        while(1)
+            ;
+        return 0;
     }
-    return 0;
-}
-```
+    ```
 
-This particular variation being, if you want to your code to do something every *x* seconds when, wait for *x* seconds, then do something. Animation in general requires a frame to be rendered 60 times every second thus delta time can be calculated as follows.
+    > Many online sources over complicate delta time; and for good reason as there are numerous implementations that vary. I hope that with respect to simplicity, the following function explains one variation delta time quite well.
 
-```java
-time_per_tick :=       // calculate how much time each loop iteration should take to achieve 60 fps
-ticks_per_second :=    // calculate how many ticks per second with respect to time per tick
-timer := 0             // most likely wil be nano seconds
-ticks := 0            
-time_now := 0
-time_before := 0
-frames_rendered := 0
 
-while(running)
-    time_now := // function that returns time since epoch
-    timer := time_now - time_before
-    ticks := ticks + timer
-    time_before := time_now
-    render() //render a frame
-    frames_rendered ++
-    logic()  //perform logic
-    if(timer < time_per_tick)
-        delay(time_per_tick - timer)  // see SDL_Delay
-    if(ticks > ticks_per_second)
-        ticks := 0
-        print(frames_rendered)
-        frames_rendered := 0
-```
+    ```c
+    int main(int argc, char ** argv)
+    {
+        unsigned int IPS = 1;   /* Iterations per second */
+        while(1) {
+            /* render */
+            /* now do something */
+            sleep(IPS);
+        }
+        return 0;
+    }
+    ```
 
-One could argue that this implementation is not an implementation of delta time such that a lot of methods calculate delta time such that 
+    > This particular variation being, if you want to your code to do something every *x* seconds when, wait for *x* seconds, then do something. Animation in general requires a frame to be rendered 60 times every second thus delta time can be calculated as follows.
 
-```java
-delta_time:
-while(running)
-    delta_time := calculate_delta()
-    if(delta_time > 1)
-        render()
-    logic()
-```
+    ```java
+    time_per_tick :=       // calculate how much time each loop iteration should take to achieve 60 fps
+    ticks_per_second :=    // calculate how many ticks per second with respect to time per tick
+    timer := 0             // most likely wil be nano seconds
+    ticks := 0            
+    time_now := 0
+    time_before := 0
+    frames_rendered := 0
 
-In this instance rendering only happens when it is needed to achieve FPS, and the game logic is executing on every tick. 
+    while(running)
+        time_now := // function that returns time since epoch
+        timer := time_now - time_before
+        ticks := ticks + timer
+        time_before := time_now
+        render() //render a frame
+        frames_rendered ++
+        logic()  //perform logic
+        if(timer < time_per_tick)
+            delay(time_per_tick - timer)  // see SDL_Delay
+        if(ticks > ticks_per_second)
+            ticks := 0
+            print(frames_rendered)
+            frames_rendered := 0
+    ```
+
+    > One could argue that this implementation is not an implementation of delta time such that a lot of methods calculate delta time such that 
+
+    ```java
+    delta_time:
+    while(running)
+        delta_time := calculate_delta()
+        if(delta_time > 1)
+            render()
+        logic()
+    ```
+
+    > In this instance rendering only happens when it is needed to achieve FPS, and the game logic is executing on every tick. 
     

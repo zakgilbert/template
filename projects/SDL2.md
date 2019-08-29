@@ -27,7 +27,7 @@ The Simple Directmedia Layer or [SDL](https://www.libsdl.org/) has been the plig
 The following style of C coding is a technique I've adapted from [cirocosta](https://github.com/cirocosta/observer-c) via github.  Despite the fact that inheritance is still not an option, I find that developing your C code in the following manner helps with, keeping an organized name space, preventing redundant code, and producing a less convoluted main function. 
 
 - ### my_class.h
-  > Starting with *my_class.h* we can see that we are defining our prototypes within a block of preprocessor directives. Defining `#ifndef` ensures that the declarations which follow it, until defining `#endif`, will only be declared once, thus preventing a linker error.
+    > Starting with *my_class.h* we can see that we are defining our prototypes within a block of preprocessor directives. Defining `#ifndef` ensures that the declarations which follow it, until defining `#endif`, will only be declared once, thus preventing a linker error.
     ```c
     #ifndef MY_CLASS_H
     #define MY_CLASS_H
@@ -77,7 +77,6 @@ The following style of C coding is a technique I've adapted from [cirocosta](htt
 
         return this;
     }
-
     ```
 
 - ### main.c
@@ -96,7 +95,6 @@ The following style of C coding is a technique I've adapted from [cirocosta](htt
 
         return 0;
     }
-
     ```
 
 ### Delta Time

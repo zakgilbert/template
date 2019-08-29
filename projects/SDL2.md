@@ -194,5 +194,29 @@ Using this convention will help a coder realize why `C++` and `Java` were create
         logic()
     ```
 
-    > In this instance rendering only happens when it is needed to achieve FPS, and the game logic is executing on every tick. 
+    > In this instance rendering only happens when it is needed to achieve FPS such that...
     
+    > ` (delta exists in R(1,...infinity) --> render graphics) execute game logic`
+    
+    > Hence, the game logic is executing on every tick.
+
+    > As a code base grows a common problem is that you are rendering to few frames per second. Unless frame dropping logic is implemented, animation can appear delayed.  Simple programs can be costly such as an implementation of *Conways Game of Life* where each cell is the size of one pixel. In my implementation, which is featured later, the cell size can be adjusted, thus if I set the size to one pixel, my program will have to loop through a 2D array of size `1000 x 1000` on every tick in order to perform the game logic and upgrade the canvas.
+
+    > Otherwise low frame rate should not occur in small projects and should be a warning that something in the code base is taking way longer than it should. A common mistake is that the programmer has not implemented their code such that the rendering and logic are separate. See the pseodocode as follows...
+
+    ```c
+    int game(Sprite sprite, Renderer renderer)
+    {
+        if(sprite->faces_left(sprite)) {
+            render(renderer, sprite->left_frame(sprite, renderer));
+        }
+        else if(sprite->faces_right(sprite)) {
+            render(renderer, sprite->right_frame(sprite, renderer));
+        }
+        // etc...
+    }
+    ```
+    
+    > The latter displays numerous problems, in SDL you want to avoid passing the renderer into functions that take it out of the scope of main. A different way to say this is, avoid surrounding render calls with conditional. One frame may contain a lot of textures that all need to be rendered to the canvas separately. The cleanest way to implement this is to render all your textures one after the other. This is not easy to do such that, the textures, coordinates, and properties ...etc of a game object will be encapsulated within the object.  The following section was the way I dealt with this problem.
+
+3. ## Writing My Own Render Queue

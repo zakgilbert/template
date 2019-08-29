@@ -116,12 +116,14 @@ The Simple Directmedia Layer or [SDL](https://www.libsdl.org/) has been the plig
 
     > The ability to create multiple objects of the same type that share the same functions and primitives; lets the C coder implement and understand C in a few ways.
 
-    1. Avoid functions with an awkward number of parameters my passing the object instead
-    2. Return multiple variables.
-    3. Gain a stronger understanding of function pointers.
-    4. Avoid memory leaks by encapsulating allocation and de-allocation methods.
+      1. Avoid functions with an awkward number of parameters my passing the object instead
+      2. Return multiple variables.
+      3. Gain a stronger understanding of function pointers.
+      4. Avoid memory leaks by encapsulating allocation and de-allocation methods.
 
     > Using this convention will help a coder realize why `C++` and `Java` were created and gain an appreciation for the people who created them.  As for SDL, keeping logic and graphics rendering separated is now an option, among other things.
+
+
 
 <img class="ui medium left floated image" src="../images/delta.png">
 
